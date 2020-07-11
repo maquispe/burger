@@ -14,8 +14,14 @@ Just follow the link to the deployed Heroku app!
 * Heroku app link: https://pacific-beyond-53594.herokuapp.com/
 
 ## Usage
+![](public/assets/images/BurgerApp.gif)
 
-The user must first input the name of a burger. Said burger will appear on the left side of the screen with a button that say "Devour it!". Upon pressing the button, the burger will move to the right side of the screen. 
+The user must first input the name of a burger. 
+![](public/assets/images/Screenshot-1.png)
+Said burger will appear on the left side of the screen with a button that say "Devour it!". 
+![](public/assets/images/Screenshot-2.png)
+Upon pressing the button, the burger will move to the right side of the screen. 
+![](public/assets/images/Screenshot-3.png)
 
 ## License
 
