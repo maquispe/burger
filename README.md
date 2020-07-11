@@ -18,8 +18,10 @@ Just follow the link to the deployed Heroku app!
 
 The user must first input the name of a burger. 
 ![](public/assets/images/Screenshot-1.png)
+
 Said burger will appear on the left side of the screen with a button that say "Devour it!". 
 ![](public/assets/images/Screenshot-2.png)
+
 Upon pressing the button, the burger will move to the right side of the screen. 
 ![](public/assets/images/Screenshot-3.png)
 
