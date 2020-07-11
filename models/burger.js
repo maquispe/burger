@@ -6,8 +6,8 @@ const burger = {
             cb(res);
         });
     },
-    insert: (cols, val1, val2, cb) => {
-        orm.insertOne("burgers", cols, val1, val2, res => {
+    insert: (cols, vals, cb) => {
+        orm.insertOne("burgers", cols, vals, res => {
             cb(res);
         });
     },
@@ -17,3 +17,5 @@ const burger = {
         });
     }
 }
+
+module.exports = burger;

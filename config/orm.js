@@ -1,5 +1,14 @@
 const connection = require("./connection.js");
 
+const printQuestionMarks = num => {
+  const arr = [];
+
+  for (var i = 0; i < num; i++) {
+    arr.push("?");
+  }
+  return arr.toString();
+}
+
 const objToSql = (ob) => {
   const arr = [];
   for (let key in ob) {
@@ -14,7 +23,7 @@ const objToSql = (ob) => {
   return arr.toString();
 };
 
-module.exports = orm = {
+const orm = {
   selectAll: (tableInput, cb) => {
     const queryString = "SELECT * FROM " + tableInput + ";";
     connection.query(queryString, function (err, result) {
@@ -22,15 +31,25 @@ module.exports = orm = {
       cb(result);
     });
   },
-  insertOne: (table, cols, val1, val2, cb) => {
-    const queryString = "INSERT INTO ??(??) VALUES (?, ?);";
-    connection.query(queryString, [table, cols, val1, val2], (err, result) => {
+  insertOne: (table, cols, vals, cb) => {
+    let queryString = "INSERT INTO " + table;
+
+    queryString += " (";
+    queryString += cols.toString();
+    queryString += ") ";
+    queryString += "VALUES (";
+    queryString += printQuestionMarks(vals.length);
+    queryString += ") ";
+
+    console.log(queryString);
+
+    connection.query(queryString, vals, function(err, result) {
       if (err) throw err;
       cb(result);
     });
   },
   updateOne: (table, objColVals, condition, cb) => {
-    const queryString = "UPDATE " + table;
+    let queryString = "UPDATE " + table;
 
     queryString += " SET ";
     queryString += objToSql(objColVals);
@@ -44,3 +63,5 @@ module.exports = orm = {
     });
   },
 };
+
+module.exports = orm;
