@@ -11,6 +11,7 @@ With this app, the user can enter the name of a burger that they would like to e
 ## Installation
 
 Just follow the link to the deployed Heroku app!
+* Heroku app link: https://pacific-beyond-53594.herokuapp.com/
 
 ## Usage
 
