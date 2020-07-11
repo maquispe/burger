@@ -1,13 +1,18 @@
+h1 {
+  text-align: center;
+}
+
 li {
-    padding: 5px;
-    margin: 5px;
-    background: #faebd7;
-  }
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+  border-radius: 5px;
+}
   
-  .label {
-    font-weight: bold;
-  }
+.label {
+  font-weight: bold;
+}
   
-  .form-group {
-    margin-bottom: 5px;
-  }
+.form-group {
+  margin-bottom: 5px;
+}
