@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-4">
-      <h2>Burgers I want to eat!</h2>
+      <h2>Burgers I want to eat:</h2>
 
       <ul>
         {{#each burgers}}
@@ -19,13 +19,13 @@
         <div class="form-group">
           <label for="burger">Burger Name:</label>
           <input type="text" id="burger" name="name">
-          <button type="submit">Add Burger</button>
+          <button type="submit" id="addBurger"class="btn btn-warning">Add Burger</button>
         </div>
       </form>
     </div>
 
     <div class="col-lg-4">
-      <h2>Burgers I've demolished!</I></h2>
+      <h2>Burgers I've demolished:</h2>
 
       <ul>
         {{#each burgers}}

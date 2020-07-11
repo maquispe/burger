@@ -1,14 +1,35 @@
-h1 {
-  text-align: center;
+body {
+  background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/light-veneer.png');
 }
 
+h1 {
+  text-align: center;
+  background-color: #f4b64c;
+}
+ul {
+  list-style-type: none;
+  background-color: bisque;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: -25px;
+}
+
+ul li::before {
+  content: "\f805";
+  font-family: "Font Awesome\ 5 Free";
+  padding: 0 10px 0 0;
+  font-weight: 900;
+}
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background: #f4b64c;
   border-radius: 5px;
 }
   
+#addBurger {
+  margin-left: 100px;
+}
 .label {
   font-weight: bold;
 }
